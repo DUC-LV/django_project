@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-u-qakl&^gv)m%ou=b2a7%vfb&**w1(xe$orar5ymbda7e42og)'
+SECRET_KEY = 'django-insecure-92+-$l@%0wx+8zeubt+wmyr&z73=ia83=83tuh-w&hv64437)s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'polls',
+    'snippets',
+    'books',
 ]
 
 MIDDLEWARE = [
@@ -79,10 +80,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-        'USER': 'duc_lv',
-        'PASSWORD': 'duc080999',
-        'HOST': 'localhost',
-        'PORT': '8000',
     }
 }
 

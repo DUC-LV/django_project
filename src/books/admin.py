@@ -5,11 +5,13 @@ from books.models import Book
 @admin.register(Book)
 class Book(admin.ModelAdmin):
     list_display = [
+        "created",
         "name",
         "price",
         "author",
         "type_book",
         "snippet",
         "need_login",
+        "image_cover",
     ]
     admin.register(Book)

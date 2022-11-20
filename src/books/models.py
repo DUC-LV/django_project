@@ -9,6 +9,7 @@ class Book(models.Model):
     type_book = models.CharField(max_length=200)
     snippet = models.TextField()
     need_login = models.IntegerField(default=0)
+    image_cover = models.CharField(max_length=200)
     
     class Meta:
         ordering = ['created']

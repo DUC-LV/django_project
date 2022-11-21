@@ -5,9 +5,11 @@ let axiosInstance = axios.create({
     baseURL: baseURL,
     timeout: 500,
     headers: {
-        'Authorization': 'Bearer',
+        'Authorization': '*',
 		'Content-Type': 'application/json',
 		'accept': 'application/json',
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
     }
 });
 
